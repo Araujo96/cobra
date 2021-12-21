@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Snake</string>
+    <string name="novo_jogo">novo jogo</string>
+    <string name="cobra">cobra</string>
+    <string name="configurar">configurar</string>
+    <string name="continuar">continuar</string>
+    <string name="escolha_a_dificuldade">escolha a dificuldade</string>
+    <string name="normal" translatable="false">normal</string>
+    <string name="dificl">dificil</string>
+    <string name="pausar">pausar</string>
+    <string name="baixo">baixo</string>
+    <string name="cima">cima</string>
+    <string name="direita">direita</string>
+    <string name="esquerda">esquerda</string>
+</resources>

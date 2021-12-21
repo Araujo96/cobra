@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Tabuleiro"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:id="@+id/gridboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="@+id/botaoBaixo"
+            app:layout_constraintStart_toEndOf="@+id/botaoBaixo"
+            tools:context=".MainActivity">
+
+            <Button
+                android:id="@+id/botaoEsquerda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="17dp"
+                android:text="@string/esquerda"
+                app:layout_constraintBottom_toTopOf="@+id/botaoBaixo"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/botaoDireita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="14dp"
+                android:text="@string/direita"
+                app:layout_constraintStart_toEndOf="@+id/botaoEsquerda"
+                app:layout_constraintTop_toBottomOf="@+id/botaoCima" />
+
+            <Button
+                android:id="@+id/botaoCima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="63dp"
+                android:layout_marginBottom="14dp"
+                android:rotation="-90"
+                android:text="@string/cima"
+                app:layout_constraintBottom_toTopOf="@+id/botaoEsquerda"
+                app:layout_constraintEnd_toEndOf="@+id/botaoDireita" />
+
+            <Button
+                android:id="@+id/botaoBaixo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:rotation="-90"
+                android:text="@string/baixo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/botaoCima"
+                app:layout_constraintStart_toStartOf="@+id/botaoCima" />
+
+            <Button
+                android:id="@+id/botaoPausar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pausar"
+                tools:layout_editor_absoluteX="280dp"
+                tools:layout_editor_absoluteY="662dp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</layout>
